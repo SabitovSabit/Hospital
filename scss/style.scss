@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+li {
+  list-style-type: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@import '../scss/mixins';
+@import '../scss/partials/homePage/topPageArea';
+@import '../scss/partials/homePage/header';
+@import '../scss/partials/homePage/carouselZoom';
+@import '../scss/partials/homePage/emergencyCaseArea';
+@import '../scss/partials/homePage/hospitalAbout';
+@import '../scss//partials/homePage/services';
+@import '../scss/partials/homePage/consultation';
+@import '../scss/partials/homePage/doctorLists';
+@import '../scss/partials/homePage/doctorsFilter';
+@import '../scss/partials/homePage/testimonials';
+@import '../scss/partials/homePage/latestBlog';
+@import '../scss/partials/homePage/helpForm';
+@import '../scss/partials/homePage/footer';
+
+
+@import '../scss/mixins';
+@import '../scss/partials/aboutUs/breadcrumbArea';
+@import '../scss/partials/aboutUs/aboutUsServices';

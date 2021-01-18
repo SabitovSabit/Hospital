@@ -1,0 +1,168 @@
+.consultation {
+    padding: 120px 0;
+
+    h2 {
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .flat-icons {
+        text-align: center;
+        padding: 35px;
+        background: #ffffff;
+        text-align: center;
+        border: 2px solid rgba(30, 190, 182, 1);
+
+        @include md {
+            margin-top: 5%;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    }
+
+    .margin-div {
+        margin: 6% 6% 0 0;
+
+        @include lg {
+            margin: 0 !important;
+        }
+
+        @include md {
+            margin: 0 !important;
+        }
+    }
+
+    .appoinment-form {
+        background: #1ebeb6;
+        padding: 12% 5%;
+        position: relative;
+
+        @include lg {
+            margin-left: 30px;
+            margin-top: 11%;
+        }
+
+        @include md {
+            margin-top: 5%;
+        }
+
+        h4 {
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #ffffff;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 5px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .left-right-padding {
+            padding: 0 4%;
+        }
+
+        input {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 23px 25px;
+            color: #ffffff;
+        }
+
+        .form-control-name,
+        .form-control-phone {
+            @include lg {
+                width: 97%;
+                margin-left: 10px;
+            }
+
+            @include md {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        .department-select {
+            @include md {
+                margin-top: 15px;
+            }
+        }
+
+
+        ::placeholder {
+            color: white;
+        }
+
+        select {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 0 25px;
+            color: #ffffff;
+        }
+
+        button {
+            padding: 12px 40px;
+            background: #ffffff;
+            color: #1ebeb6;
+            text-transform: capitalize;
+            font-weight: 600;
+            width: 100%;
+            border: none;
+            border-radius: 30px;
+        }
+
+        .nice-select {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 0 25px;
+            color: #ffffff;
+
+            ul {
+                width: 100%;
+
+                li {
+                    color: black;
+                }
+            }
+
+            &::after {
+                border-bottom: 2px solid white;
+                border-right: 2px solid white;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            left: -30px;
+            top: -30px;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: #1ebeb6;
+            z-index: -1;
+            opacity: 0.2;
+
+            @include md {
+                display: none;
+            }
+        }
+    }
+}
